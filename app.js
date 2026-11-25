@@ -1,5 +1,5 @@
 // FelineSTUDIO - Real Online API with Supabase
-const SUPABASE_URL = 'https://supabase.com/dashboard/org/apqrwdnfihaaennlvfzm';
+const SUPABASE_URL = 'https://apqrwdnfhaaennivfzm.supabase.co';
 const SUPABASE_KEY = 'sb_publishable_1DlqPCVWkrWoph6AGDdTYA_WxLmLuui';
 
 const headers = {
