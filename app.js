@@ -18,10 +18,6 @@ async function loadCats() {
       <button onclick="deleteCat(${c.id})">🗑️ ลบ</button>
     </div>
   `).join('');
-}
-
-async function addCat() {
-  const name = document.getElementById('name').value;
   const breed = document.getElementById('breed').value;
   if (!name || !breed) return alert('ใส่ชื่อกับพันธุ์ก่อนนะ');
   await fetch(`${SUPABASE_URL}/rest/v1/cats`, {
