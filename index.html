@@ -8,9 +8,17 @@
 </head>
 <body>
   <h1>🐱 FelineSTUDIO</h1>
-  <p>Part of FelineUNIVERSE</p>
-  <button onclick="loadCats()">โหลดข้อมูลแมวจาก API</button>
-  <div id="result">กดปุ่มเพื่อโหลดข้อมูล...</div>
+  <p>Part of FelineUNIVERSE - Real API</p>
+
+  <div class="form">
+    <input id="name" placeholder="ชื่อแมว เช่น Mochi">
+    <input id="breed" placeholder="พันธุ์ เช่น British Shorthair">
+    <button onclick="addCat()">+ เพิ่มแมว</button>
+  </div>
+
+  <button onclick="loadCats()">🔄 โหลดข้อมูลจาก API</button>
+  <div id="result">กดโหลดข้อมูล...</div>
+
   <script src="app.js"></script>
 </body>
 </html>
