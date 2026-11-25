@@ -1,6 +1,6 @@
 // FelineSTUDIO - Real Online API with Supabase
-const SUPABASE_URL = 'supabase.com';
-const SUPABASE_KEY = 'ใsb_publishable_1DlqPCVWkrWoph6AGDdTYA_WxLmLuui';
+const SUPABASE_URL = 'https://supabase.com/dashboard/org/apqrwdnfihaaennlvfzm';
+const SUPABASE_KEY = 'sb_publishable_1DlqPCVWkrWoph6AGDdTYA_WxLmLuui';
 
 const headers = {
   'apikey': SUPABASE_KEY,
@@ -19,6 +19,7 @@ async function loadCats() {
     </div>
   `).join('');
 }
+
 async function addCat() {
   const name = document.getElementById('name').value;
   const breed = document.getElementById('breed').value;
