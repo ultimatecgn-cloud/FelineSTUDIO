@@ -1,0 +1,16 @@
+{
+  "item_title": "string",
+  "rank": "integer",
+  "market": "THAILAND|KOREA|CHINA|GLOBAL",
+  "category": "string",
+  "platform": "string",
+  "metric_name": "views|rating|review_count|likes|engagement|chart_position|other",
+  "metric_value": "string",
+  "source_name": "string",
+  "source_url": "https://...",
+  "checked_at_utc": "ISO-8601",
+  "observation_window": "string",
+  "limitations": [
+    "string"
+  ]
+}

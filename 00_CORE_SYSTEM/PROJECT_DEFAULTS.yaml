@@ -1,0 +1,22 @@
+version: 2.0
+default_format: short_film
+default_aspect_ratio: "16:9"
+vertical_drama:
+  aspect_ratio: "9:16"
+  mobile_safe_area: true
+  hook_seconds: 3
+  cliffhanger_required: true
+regional_modes: [THAILAND, KOREA, CHINA]
+quality:
+  minimum_score: 90
+  max_revision_rounds_per_gate: 3
+research:
+  top_n: 10
+  markets: [THAILAND, KOREA, CHINA, GLOBAL]
+  require_source_url: true
+  require_checked_at: true
+production:
+  require_project_bible: true
+  lock_bible_after_approval: true
+  require_rights_review: true
+  require_final_render_verification: true

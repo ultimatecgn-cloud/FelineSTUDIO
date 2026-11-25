@@ -1,0 +1,21 @@
+# QA Report
+- Project ID:
+- Version:
+- Format / aspect ratio:
+- Gate:
+- Reviewer / evaluator:
+- Date:
+- Total score:
+- Status:
+- Critical failures: NONE / LIST
+- Evidence:
+  - Story:
+  - Visual:
+  - Audio:
+  - Continuity:
+  - Technical:
+  - Rights/culture:
+- Defects by severity:
+- Revision round:
+- Regression tests:
+- Approval required:

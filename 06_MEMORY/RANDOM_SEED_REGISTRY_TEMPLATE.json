@@ -1,0 +1,10 @@
+{
+  "project_id": "PROJECT_ID",
+  "seed": "GENERATED_SEED",
+  "created_at": "ISO-8601",
+  "engine_version": "2.0",
+  "randomized_fields": [],
+  "fixed_user_constraints": [],
+  "locked_fields": [],
+  "reroll_history": []
+}

@@ -1,0 +1,14 @@
+# Character Bible
+- Character ID / name:
+- Story function:
+- Age as specified in story:
+- Goal / need / fear / false belief:
+- Internal and external conflict:
+- Arc:
+- Voice / language register:
+- Appearance keys:
+- Wardrobe by scene/time:
+- Props:
+- Relationships:
+- Allowed changes:
+- Forbidden continuity changes:

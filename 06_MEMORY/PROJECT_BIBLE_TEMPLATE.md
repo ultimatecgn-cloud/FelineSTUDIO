@@ -1,0 +1,19 @@
+# Project Bible
+- Project ID / title:
+- Prompt (original):
+- Hard constraints:
+- Assumptions:
+- Random seed / engine version:
+- Market / genre / format:
+- Logline / theme:
+- Synopsis:
+- Audience:
+- Episode/scene architecture:
+- Character bible references:
+- World / timeline / location rules:
+- Visual bible:
+- Sound/music identity:
+- Rights/provenance:
+- Approved version:
+- Locked fields:
+- Change requests:
