@@ -2,8 +2,8 @@
   { "id": 1, "name": "BAEMOO", "breed": "Domestic Shorthair" },
   { "id": 2, "name": "THANGTAES", "breed": "Domestic Shorthair" },
   { "id": 3, "name": "BEETUD", "breed": "Domestic Shorthair,mEDIUM-LENGTH TAIL FUR" }
-  MINION Persian cat
-  NOMPANG Persian cat
-  TONTAEN Domestic Shorthair
-  NGONOI Domestic Shorthair
+   { "id": 4, "name": "MINION", "breed": "Persian cat" },
+  { "id": 5, "name": "NOMPANG", "breed": "Persian cat" },
+  { "id": 6, "name": "TONTAEN", "breed": "Domestic Shorthair" },
+  { "id": 7, "name": "NGONOI", "breed": "Domestic Shorthair" },
 ]
