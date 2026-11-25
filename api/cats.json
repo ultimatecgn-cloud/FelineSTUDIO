@@ -1,9 +1,53 @@
-[
-  { "id": 1, "name": "BAEMOO", "breed": "Domestic Shorthair" },
-  { "id": 2, "name": "THANGTAES", "breed": "Domestic Shorthair" },
-  { "id": 3, "name": "BEETUD", "breed": "Domestic Shorthair,mEDIUM-LENGTH TAIL FUR" }
-   { "id": 4, "name": "MINION", "breed": "Persian cat" },
-  { "id": 5, "name": "NOMPANG", "breed": "Persian cat" },
-  { "id": 6, "name": "TONTAEN", "breed": "Domestic Shorthair" },
-  { "id": 7, "name": "NGONOI", "breed": "Domestic Shorthair" },
-]
+// FelineSTUDIO - Real Online API with Supabase
+const SUPABASE_URL = 'http://supabase.com';
+const SUPABASE_KEY = 'sb_publishable_1DlqPCVWkrWoph6AGDdTYA_WxLmLuui';
+
+const headers = {
+  'apikey': SUPABASE_KEY,
+  'Authorization': 'Bearer ' + SUPABASE_KEY,
+  'Content-Type': 'application/json'
+};
+
+async function loadCats() {
+  const res = await fetch(`${SUPABASE_URL}/rest/v1/cats?select=*&order=id.asc`, { headers });
+  const cats = await res.json();
+  document.getElementById('result').innerHTML = cats.map(c => `
+    <div class="card">
+      <b>🐱 ${c.name}</b> - ${c.breed}<br>
+      <button onclick="editCat(${c.id})">✏️ แก้ไข</button>
+      <button onclick="deleteCat(${c.id})">🗑️ ลบ</button>
+    </div>
+  `).join('');
+}
+
+async function addCat() {
+  const name = document.getElementById('name').value;
+  const breed = document.getElementById('breed').value;
+  if (!name || !breed) return alert('ใส่ชื่อกับพันธุ์ก่อนนะ');
+  await fetch(`${SUPABASE_URL}/rest/v1/cats`, {
+    method: 'POST',
+    headers,
+    body: JSON.stringify({ name, breed })
+  });
+  document.getElementById('name').value = '';
+  document.getElementById('breed').value = '';
+  loadCats();
+}
+
+async function deleteCat(id) {
+  await fetch(`${SUPABASE_URL}/rest/v1/cats?id=eq.${id}`, { method: 'DELETE', headers });
+  loadCats();
+}
+
+async function editCat(id) {
+  const newName = prompt('ชื่อใหม่:');
+  if (!newName) return;
+  await fetch(`${SUPABASE_URL}/rest/v1/cats?id=eq.${id}`, {
+    method: 'PATCH',
+    headers,
+    body: JSON.stringify({ name: newName })
+  });
+  loadCats();
+}
+
+loadCats();
