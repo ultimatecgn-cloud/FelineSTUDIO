@@ -1,0 +1,5 @@
+[
+  { "id": 1, "name": "Mochi", "breed": "British Shorthair" },
+  { "id": 2, "name": "Luna", "breed": "Scottish Fold" },
+  { "id": 3, "name": "Milo", "breed": "Orange Cat" }
+]
