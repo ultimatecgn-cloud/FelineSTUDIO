@@ -7,11 +7,29 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>🐱 FelineSTUDIO</h1>
+  <header>
+    <h1>🐱 FelineSTUDIO</h1>
+    <p>Part of FelineUNIVERSE - Real Online API</p>
+  </header>
+
+  <div class="form">
+    <h2>➕ เพิ่มแมวตัวใหม่</h2>
+    <input id="name" placeholder="ชื่อแมว เช่น Mochi">
+    <input id="breed" placeholder="พันธุ์ เช่น British Shorthair">
+    <input id="age" type="number" placeholder="อายุ เช่น 2">
+    <input id="color" placeholder="สี เช่น เทา">
+    <input id="personality" placeholder="นิสัย เช่น ขี้อ้อน ชอบนอน">
+    <input id="image" placeholder="ลิงก์รูปแมว (ใส่หรือไม่ใส่ก็ได้)">
+    <button onclick="addCat()">+ เพิ่มแมว</button>
   </div>
 
-  <button onclick="loadCats()">🔄 โหลดข้อมูลจาก API</button>
-  <div id="result">กดโหลดข้อมูล...</div>
+  <button class="reload" onclick="loadCats()">🔄 โหลดข้อมูลจาก API</button>
+
+  <div id="result">กำลังโหลดแมว...</div>
+
+  <footer>
+    <p>FelineSTUDIO © 2026 | ultimatecgn-cloud</p>
+  </footer>
 
   <script src="app.js"></script>
 </body>
