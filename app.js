@@ -19,7 +19,6 @@ async function loadCats() {
     </div>
   `).join('');
 }
-
 async function addCat() {
   const name = document.getElementById('name').value;
   const breed = document.getElementById('breed').value;
